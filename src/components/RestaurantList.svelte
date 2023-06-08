@@ -6,7 +6,7 @@
     {#each restaurantes as rest}
         <ul>
             <li>
-                <a href="/{rest.shortName}">
+                <a href="/rest/{rest.shortName.toLowerCase()}">
                     <span class="">🍽</span>
                     <span class="flex-auto">{rest.name}</span>
                 </a>

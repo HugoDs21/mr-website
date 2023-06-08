@@ -1,9 +1,9 @@
 <script lang='ts'>
 	import { error } from "@sveltejs/kit";
 	import RestaurantList from "../components/RestaurantList.svelte";
+	import type {PageData} from './$types';
 
-	/** @type {import('./$types').PageData} */    
-	export let data;
+	export let data : PageData;
 	let restaurantes = data.data;
 
 </script>
